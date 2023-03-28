@@ -1,0 +1,56 @@
+.nav{
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.function{
+    margin: auto;
+}
+.text{
+    text-align: center;
+    
+}
+.upload{
+    border: 2px solid black;
+}
+#card4{
+    position:relative;
+    top: 7px;
+}
+.template{
+    display: flex;
+    position: relative;
+    top: 150px;
+    margin: auto;
+    visibility: hidden;
+    justify-content: space-between;
+}
+.card{
+    cursor:pointer;
+}
+#btn1{
+    position: relative;
+    top: 200px;
+   visibility: hidden;
+}
+.container{
+    text-align: center;
+    width: 50%;
+    margin: auto;   
+}
+input{
+    background-color: #1d9898;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+   width: 30%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
