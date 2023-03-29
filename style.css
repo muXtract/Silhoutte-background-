@@ -1,24 +1,49 @@
-.nav{
-    display: flex;
-    margin: 10px;
-    font-size: 20px;
-    
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+.nav{
+    display: flex;
+    margin: 10px;
+    font-size: 5px;
+    border: 1px  ;
+    position: relative;
+    box-shadow: 10px 5px 5px rgb(185, 183, 183);
+}
+
 .function{
-    margin: auto;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.logo{
+    display: flex;
+}
+.company{
+    font-size: 6em ;
+    font-family: 'Alkatra', cursive;
 }
 .text{
+    font-family: 'Alkatra', cursive;
+    font-size:20px ;
+}
+.function{
+    margin: auto;
+    font-size: 6em;
+}
+.container{
     text-align: center;
-    
+    width: 50%;
+    margin: auto;   
 }
 .upload{
     border: 2px solid black;
+    margin-top: 50px;
+    padding: 10px;
+}
+.uploadImage{
+    margin: 10px;
 }
 #card4{
     position:relative;
@@ -27,8 +52,7 @@
 .template{
     display: flex;
     position: relative;
-    top: 150px;
-    margin: auto;
+    
     visibility: hidden;
     justify-content: space-between;
 }
@@ -36,15 +60,10 @@
     cursor:pointer;
 }
 #btn1{
-    position: relative;
-    top: 200px;
+   margin-top: 40px;
    visibility: hidden;
 }
-.container{
-    text-align: center;
-    width: 50%;
-    margin: auto;   
-}
+
 input{
     background-color: #1d9898;
     color: white;
@@ -53,4 +72,46 @@ input{
    width: 30%;
     border-radius: 5px;
     margin-bottom: 16px;
+    
+}
+
+
+/* RESPONSIVE DESIGN */
+@media(max-width:711px){
+    input{
+        width: 100%;
+        
+    }
+    
+}
+@media (max-width:517px) {
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .company{
+        font-size: 4em;
+        position: relative;
+        top: 10px;
+    }
+    .function{
+        font-size: 4em;
+    }
+    
+    .upload{
+        height: 20vh;
+    }
+    
+   
+    .template{
+        display: flex;   
+       
+        position: absolute;
+        left: 10px;
+        width: 90%;
+       
+     }
+     
+
+   
 }

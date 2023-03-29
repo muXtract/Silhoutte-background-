@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celebrare</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
     <div class="nav ">
         <div class="logo">
-            Celebrare
+            <img src="logo.jpg" width="50px" >
+            <p class="company"> Celebrare </p>
         </div>
         <div class="function">
             Add Image/Icon
         </div>
-
     </div>
     <div class="container">
         <form >
             <div id="upload" class="upload">
-               <p> Upload Image</p>
+               <p class="uploadImage"> Upload Image</p>
                 <div class="btn">
-                    <input type="file" accept="image/png,image/jpg" id="image_input" >
+                    <input type="file" placeholder=" " accept="image/png,image/jpg" id="image_input" >
                 </div>
             </div>
         </form>
@@ -32,8 +35,8 @@
             <button id="btn1">Edit Image</button>
         </div>
         <div class="template">
-            <p>Templates</p>
-            <div class="card" id="card1"><img src="img1.avif" width="50px" ></div>
+            <p class="text">Templates</p>
+            <div class="card" id="card1"><img src="img1.png" width="50px"></div>
             <div class="card" id="card2"><img src="img2.png" width="50px" ></div>
             <div class="card" id="card3"><img src="img3.png" width="50px" ></div>
             <div class="card" id="card4"><img src="img4.png" width="50px" ></div>  

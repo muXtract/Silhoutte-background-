@@ -8,7 +8,6 @@ const card2=document.querySelector("#card2")
 const card3=document.querySelector("#card3")
 const card4=document.querySelector("#card4")
 
-
 image_input.addEventListener("change",()=>{  //when the file is selected the change listener is fired
     let reader=new FileReader();
     reader.readAsDataURL(input.files[0])
@@ -19,71 +18,84 @@ image_input.addEventListener("change",()=>{  //when the file is selected the cha
     card1.addEventListener("click",()=>{
         template.style.visibility="hidden"
         display.innerHTML=`
-        <head>
-        <style>
-            .display .box{
+        
+        <style> 
+              
+             
+                .display .box{
                 position: relative;
-                 width: 500px;
-                height: 500px;
+                
+                width:20em;
+                height:20em;
                 margin: 40px;
+              
+                text-align:center;
             }
             .display{
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                flex-wrap:wrap;
+              
             }
-            
             .box img{
                 position:absolute;
                 mix-blend-mode:screen; 
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
+                 top: 20%;
+                 
+                  left: 20%;
                 object-fit:cover;
             }
+            .img1{
+                margin-top:30px;
+            }
         </style>
-        </head>
+        
             <div class="box">
-                <img src=\"img1.avif" width=\"70%"\ \>
-                <img src=${reader.result} width="70%"/>
                 
+                    <img class="img1" id="img1" src=${reader.result} width="70%"/>
+                    <img id="img1" src=\"img1.png" width=\"70%"\ \>
+               
             </div>
-        </div>
            `
     })
     card2.addEventListener("click",()=>{
         template.style.visibility="hidden"
         display.innerHTML=`
-        <head>
-        <style>
-            .display .box{
+
+        <style> 
+              
+             
+                .display .box{
                 position: relative;
-                 width: 500px;
-                height: 500px;
+                
+                width:20em;
+                height:20em;
                 margin: 40px;
+                
+                text-align:center;
             }
             .display{
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                flex-wrap:wrap;
+              
             }
             
             .box img{
                 position:absolute;
                 mix-blend-mode:screen; 
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
+                 top: 20%;
+                 
+                  left: 20%;
+                object-fit:cover;
             }
+            .img1{
+                margin-top:30px;
+            }
+            
         </style>
-        </head>
+        
             <div class="box">
-                <img src=\"img2.png" width=\"70%"\ \>
-                <img src=${reader.result} width="70%"/>
+                <img src=\"img2.png"  width=\"70%"\ \>
+                <img class="img1" src=${reader.result}  width="70%"/>
                 
             </div>
         </div>
@@ -92,33 +104,41 @@ image_input.addEventListener("change",()=>{  //when the file is selected the cha
     card3.addEventListener("click",()=>{
         template.style.visibility="hidden"
         display.innerHTML=`
-        <head>
-        <style>
-            .display .box{
-                position: relative;
-                 width: 500px;
-                height: 500px;
-                margin: 40px;
-            }
-            .display{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap:wrap;
-            }
-            
-            .box img{
-                position:absolute;
-                mix-blend-mode:screen; 
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-            }
-        </style>
-        </head>
+        
+       
+        <style> 
+              
+             
+        .display .box{
+        position: relative;
+        
+        width:20em;
+        height:20em;
+        margin: 40px;
+        
+        text-align:center;
+    }
+    .display{
+        display: flex;
+        justify-content: center;
+      
+    }
+    
+    .box img{
+        position:absolute;
+        mix-blend-mode:screen; 
+         top: 20%;
+         
+          left: 20%;
+        object-fit:cover;
+    }
+    .img1{
+        margin-top:30px;
+    }
+    
+</style>
             <div class="box">
-                <img src=${reader.result} width="70%"/>
+                <img  class="img1"src=${reader.result} width="70%"/>
                 <img src=\"img3.png" width=\"70%"\ \>
             </div>
         </div>
@@ -127,33 +147,39 @@ image_input.addEventListener("change",()=>{  //when the file is selected the cha
     card4.addEventListener("click",()=>{
         template.style.visibility="hidden"
         display.innerHTML=`
-        <head>
-        <style>
-            .display .box{
-                position: relative;
-                 width: 500px;
-                height: 500px;
-                margin: 40px;
-            }
-            .display{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap:wrap;
-            }
-            
-            .box img{
-                position:absolute;
-                mix-blend-mode:screen; 
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-            }
-        </style>
-        </head>
+        
+        <style> 
+              
+             
+        .display .box{
+        position: relative;
+        
+        width:20em;
+        height:20em;
+        margin: 40px;
+        
+        text-align:center;
+    }
+    .display{
+        display: flex;
+        justify-content: center;
+      
+    }
+    
+    .box img{
+        position:absolute;
+        mix-blend-mode:screen; 
+         top: 20%;
+         
+          left: 20%;
+        object-fit:cover;
+    }
+    .img1{
+        margin-top:30px;
+    }
+</style>
             <div class="box">
-                <img src=${reader.result} width="70%"/>
+                <img  class="img1" src=${reader.result} width="70%"/>
                 <img src=\"img4.png" width=\"70%"\ \>
             </div>
         </div>
@@ -170,16 +196,6 @@ btn1.addEventListener("click",()=>{
     template.style.visibility="visible";
 })
 
-card2.addEventListener("click",()=>{
-    template.style.visibility="hidden"
-})
-card3.addEventListener("click",()=>{
-    template.style.visibility="hidden"
-})
-
-card4.addEventListener("click",()=>{
-    template.style.visibility="hidden"
-})
 
 
 
